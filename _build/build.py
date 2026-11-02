@@ -116,7 +116,7 @@ PROCESS = [
     ("Capsule forming", "Stainless-steel pins dip into the gelatin solution, then the film is dried, stripped, trimmed and joined into matched caps and bodies.",
      "capsule-pins.jpg", "Yellow capsule bodies forming on stainless-steel pins"),
     ("Printing", "Logos, names and product codes are printed in edible pharmaceutical ink using axial, spin or multicolour printing, to your approved artwork.",
-     "capsule-printing.jpg", "White capsules carried through the printing machine"),
+     "inspection-line.jpg", "White capsules carried along the automated inspection line"),
     ("Inspection", "PLC-controlled lines with high-resolution cameras and laser sensors check every capsule and automatically remove any with defects.",
      "inspection-line.jpg", "Capsules moving along the automated camera inspection line"),
     ("Packing & storage", "Approved capsules are sealed and cartoned, then held under controlled temperature and humidity so they reach you in perfect condition.",

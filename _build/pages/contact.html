@@ -1,0 +1,78 @@
+<!--
+title: Contact Us
+description: Contact Multicaps for capsule orders, samples and technical queries. Call +92 300 1268033, email info@multicaps.net, or visit our head office in P.E.C.H.S and production plant in North Karachi.
+path: contact.html
+nav: contact
+-->
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <div>
+      <ol class="breadcrumb"><li><a href="{{root}}index.html">Home</a></li><li>Contact</li></ol>
+      <h1>Contact us</h1>
+    </div>
+    <p class="lead">For orders, pricing, technical questions or a plant visit, our team is ready to help. Call, message us on WhatsApp or send the form below.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-layout">
+    <div class="reveal">
+      <ul class="contact-list">
+        <li><span class="rows__icon">{{icon:phone}}</span><div><small>Phone &amp; WhatsApp</small><a href="tel:+923001268033">+92 300 1268033</a></div></li>
+        <li><span class="rows__icon">{{icon:mail}}</span><div><small>Email</small><a href="mailto:info@multicaps.net">info@multicaps.net</a></div></li>
+        <li><span class="rows__icon">{{icon:pin}}</span><div><small>Head office</small><p>C-197, Block 2, P.E.C.H.S, Karachi, Sindh 74500, Pakistan</p></div></li>
+        <li><span class="rows__icon">{{icon:factory}}</span><div><small>Production plant</small><p>A-92, Phase 1, S.I.T.E Super Highway Industrial Area, North Karachi, Sindh 75340, Pakistan</p></div></li>
+        <li><span class="rows__icon">{{icon:clock}}</span><div><small>Opening hours</small><p>Monday &ndash; Sunday, 24/7</p></div></li>
+      </ul>
+      <div class="qr-box">
+        <img src="{{root}}assets/img/whatsapp-qr.png" alt="QR code to chat with Multicaps on WhatsApp" width="400" height="400" loading="lazy">
+        <p><strong>Prefer WhatsApp?</strong><br>Scan the code with your phone, or <a class="link-arrow" style="display:inline" href="https://wa.me/923001268033" target="_blank" rel="noopener">open a chat</a>.</p>
+      </div>
+    </div>
+    <div class="form-card reveal">
+      <h2 style="font-size:1.6rem">Send us a message</h2>
+      <p class="muted mt-s">We will be glad to answer your questions and get back to you as soon as possible.</p>
+      <form class="mt-m" data-form data-endpoint="" data-mailto="info@multicaps.net" data-subject="Website enquiry" novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="f-name">Full name <span class="req">*</span></label><input id="f-name" name="Name" autocomplete="name" required><p class="field__error"></p></div>
+          <div class="field"><label for="f-company">Company <span class="opt">(optional)</span></label><input id="f-company" name="Company" autocomplete="organization"></div>
+          <div class="field"><label for="f-email">Email address <span class="req">*</span></label><input id="f-email" name="Email" type="email" autocomplete="email" required><p class="field__error"></p></div>
+          <div class="field"><label for="f-phone">Phone number <span class="req">*</span></label><input id="f-phone" name="Phone" type="tel" autocomplete="tel" required><p class="field__error"></p></div>
+          <div class="field full"><label for="f-subject">Subject <span class="req">*</span></label>
+            <select id="f-subject" name="Subject" required>
+              <option value="">Select a topic</option>
+              <option>Pricing and orders</option>
+              <option>Technical or specification query</option>
+              <option>Documentation (halal, DRAP, ISO)</option>
+              <option>Plant visit or audit</option>
+              <option>Export enquiry</option>
+              <option>Other</option>
+            </select><p class="field__error"></p></div>
+          <div class="field full"><label for="f-msg">Message <span class="req">*</span></label><textarea id="f-msg" name="Message" required></textarea><p class="field__error"></p></div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+        </div>
+        <div class="form-foot">
+          <p>Looking for samples? Use the <a class="link-arrow" style="display:inline" href="{{root}}request-sample.html">sample request form</a>.</p>
+          <button class="btn btn--primary" type="submit">Send Message {{icon:arrow}}</button>
+        </div>
+        <div class="form-status" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head reveal"><h2>Where to find us</h2></div>
+    <div class="map-grid reveal">
+      <div class="map-card">
+        <iframe title="Map of Multicaps head office" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Multicaps%20HeadOffice%2C%20C-197%20Block%202%20PECHS%20Karachi&t=m&z=16&output=embed"></iframe>
+        <div class="map-card__body"><h3>Head office</h3><p>C-197, Block 2, P.E.C.H.S, Karachi, Sindh 74500</p></div>
+      </div>
+      <div class="map-card">
+        <iframe title="Map of Multicaps production plant" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Multicaps%20Production%20Plant%2C%20SITE%20Super%20Highway%20Industrial%20Area%20Karachi&t=m&z=15&output=embed"></iframe>
+        <div class="map-card__body"><h3>Production plant</h3><p>A-92, Phase 1, S.I.T.E Super Highway Industrial Area, North Karachi, Sindh 75340</p></div>
+      </div>
+    </div>
+  </div>
+</section>

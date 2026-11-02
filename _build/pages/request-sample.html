@@ -1,0 +1,139 @@
+<!--
+title: Request a Sample
+description: Request samples or a quotation for halal empty hard gelatin capsules. Choose size, finish, colours, printing and quantity and our sales team will be in touch.
+path: request-sample.html
+nav: sample
+-->
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <div>
+      <ol class="breadcrumb"><li><a href="{{root}}index.html">Home</a></li><li>Request a Sample</li></ol>
+      <h1>Request samples or a quotation</h1>
+    </div>
+    <p class="lead">Tell us what your product needs. Our sales team will review your request and come back to you with samples, specifications and pricing.</p>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container sample-layout">
+    <div class="form-card">
+      <form data-form data-endpoint="" data-mailto="info@multicaps.net" data-subject="Sample / quotation request" data-success="Thank you. Your request has been sent and our sales team will contact you shortly." novalidate>
+
+        <div class="form-section">
+          <div class="form-section__head">
+            <h2>Capsule requirements</h2>
+            <p>Not sure about something? Choose "Not sure" and our team will advise.</p>
+          </div>
+          <div class="form-grid">
+            <fieldset class="field full">
+              <legend>What do you need?</legend>
+              <div class="segmented">
+                <label class="option"><input class="choice-input" type="radio" name="Request type" value="Samples"><span class="segmented__btn">Samples</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Request type" value="Quotation"><span class="segmented__btn">Quotation</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Request type" value="Samples and quotation" checked><span class="segmented__btn">Both</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset class="field full">
+              <legend>Capsule size <span class="req">*</span></legend>
+              {{size_options}}
+              <p class="field__error"></p>
+            </fieldset>
+
+            <fieldset class="field full">
+              <legend>Finish</legend>
+              <div class="options">
+                <label class="option"><input class="choice-input" type="radio" name="Finish" value="Opaque" checked><span class="option__box">Opaque</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Finish" value="Clear transparent"><span class="option__box">Clear transparent</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Finish" value="Coloured transparent"><span class="option__box">Coloured transparent</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Finish" value="Pearl"><span class="option__box">Pearl</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Finish" value="Not sure"><span class="option__box">Not sure</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field"><label for="s-cap">Cap colour <span class="req">*</span></label><input id="s-cap" name="Cap colour" placeholder="e.g. Red, Pantone 186 C" required><p class="field__error"></p></div>
+            <div class="field"><label for="s-body">Body colour <span class="req">*</span></label><input id="s-body" name="Body colour" placeholder="e.g. Yellow, Pantone 116 C" required><p class="field__error"></p></div>
+
+            <fieldset class="field full">
+              <legend>Printing</legend>
+              <div class="segmented">
+                <label class="option"><input class="choice-input" type="radio" name="Printed" value="No" checked><span class="segmented__btn">Plain, no printing</span></label>
+                <label class="option"><input class="choice-input" type="radio" name="Printed" value="Yes"><span class="segmented__btn">Printed</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field full reveal-block" data-reveal-name="Printed" data-reveal-value="Yes" hidden>
+              <label for="s-print">What should be printed? <span class="req">*</span></label>
+              <input id="s-print" name="Print details" placeholder="e.g. Company logo on cap, product name on body, black ink" required>
+              <p class="field__hint">You can email your artwork to info@multicaps.net after sending this form.</p>
+              <p class="field__error"></p>
+            </div>
+
+            <div class="field full"><label for="s-qty">Estimated quantity <span class="req">*</span></label>
+              <select id="s-qty" name="Quantity" required>
+                <option value="">Select a quantity</option>
+                <option>Samples only for now</option>
+                <option>Up to 1 million capsules</option>
+                <option>1 to 5 million capsules</option>
+                <option>5 to 20 million capsules</option>
+                <option>More than 20 million capsules</option>
+              </select><p class="field__error"></p></div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section__head">
+            <h2>Your details</h2>
+            <p>So we know where to send samples and who to contact.</p>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="s-company">Company name <span class="req">*</span></label><input id="s-company" name="Company" autocomplete="organization" required><p class="field__error"></p></div>
+            <div class="field"><label for="s-person">Contact person <span class="req">*</span></label><input id="s-person" name="Contact person" autocomplete="name" required><p class="field__error"></p></div>
+            <div class="field"><label for="s-email">Email address <span class="req">*</span></label><input id="s-email" name="Email" type="email" autocomplete="email" required><p class="field__error"></p></div>
+            <div class="field"><label for="s-phone">Phone number <span class="req">*</span></label><input id="s-phone" name="Phone" type="tel" autocomplete="tel" placeholder="+92" required><p class="field__error"></p></div>
+            <div class="field"><label for="s-country">Country <span class="req">*</span></label><input id="s-country" name="Country" autocomplete="country-name" value="Pakistan" required><p class="field__error"></p></div>
+            <div class="field"><label for="s-city">City <span class="opt">(optional)</span></label><input id="s-city" name="City" autocomplete="address-level2"></div>
+            <div class="field full"><label for="s-remarks">Anything else? <span class="opt">(optional)</span></label><textarea id="s-remarks" name="Remarks" placeholder="Filling machine type, delivery timeline, documents you need (halal, DRAP, CoA)"></textarea></div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <p>Your details are used only to respond to this request.</p>
+          <button class="btn btn--primary" type="submit">Send Request {{icon:arrow}}</button>
+        </div>
+        <div class="form-status" role="status"></div>
+      </form>
+    </div>
+
+    <aside class="sample-aside">
+      <div class="sample-aside__card">
+        <div class="sample-aside__img"><img src="{{root}}assets/img/capsules-red-yellow.jpg" alt="Red and yellow hard gelatin capsules" width="1228" height="900" loading="lazy"></div>
+        <div class="sample-aside__body">
+          <h2>What you will receive</h2>
+          <ul class="check-list">
+            <li>{{icon:check}}<span>Capsules in your chosen size, finish and colours</span></li>
+            <li>{{icon:check}}<span>Specification sheet with dimensions and tolerances</span></li>
+            <li>{{icon:check}}<span>Quotation for your expected volume</span></li>
+            <li>{{icon:check}}<span>Halal and DRAP documents on request</span></li>
+          </ul>
+          <div class="sample-aside__contact">
+            <p>Prefer to talk it through? Our sales team is a call or message away.</p>
+            <div class="btn-row">
+              <a class="btn btn--light btn--sm" href="tel:+923001268033">{{icon:phone}} Call Sales</a>
+              <a class="btn btn--ghost-light btn--sm" href="https://wa.me/923001268033" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="next-steps">
+        <h3>What happens next</h3>
+        <ul>
+          <li><span class="rows__icon">{{icon:doc}}</span><div><strong>We review your request</strong><span>Sales checks your size, colour and print requirements.</span></div></li>
+          <li><span class="rows__icon">{{icon:phone}}</span><div><strong>We confirm the details</strong><span>We call or email to clarify anything, including artwork.</span></div></li>
+          <li><span class="rows__icon">{{icon:box}}</span><div><strong>Samples and pricing follow</strong><span>You receive samples, a spec sheet and a quotation.</span></div></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>

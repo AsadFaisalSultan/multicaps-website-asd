@@ -1,0 +1,101 @@
+<!--
+title: Careers
+description: Join Multicaps, Pakistan's largest halal hard gelatin capsule manufacturer. View open positions in sales and marketing in Karachi and apply online.
+path: careers.html
+nav: careers
+image: assets/img/qc-lab.jpg
+-->
+<section class="page-hero">
+  <div class="container page-hero__inner">
+    <div>
+      <ol class="breadcrumb"><li><a href="{{root}}index.html">Home</a></li><li><a href="{{root}}about.html">About</a></li><li>Careers</li></ol>
+      <h1>Build your career with Multicaps</h1>
+    </div>
+    <div>
+      <p class="lead">With a legacy of excellence and a fast-growing presence, Multicaps offers the chance to grow, contribute and make a lasting impact on healthcare. Whether you are starting out or taking the next step, your journey starts here.</p>
+      <a class="btn btn--primary mt-m" href="#positions">View Open Positions {{icon:arrow}}</a>
+    </div>
+  </div>
+  <div class="page-hero__banner"><img src="{{root}}assets/img/lab-microscope.jpg" alt="Multicaps team member working in the laboratory" width="1350" height="900" fetchpriority="high"></div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Why work with us</h2>
+    </div>
+    <div class="card-grid reveal">
+      <div class="feature-card"><span class="rows__icon">{{icon:factory}}</span><h3>Industry leadership</h3><p>Work at Pakistan's largest capsule manufacturer, supplying most of the national pharmaceutical industry.</p></div>
+      <div class="feature-card"><span class="rows__icon">{{icon:users}}</span><h3>A team that invests in you</h3><p>Learn from experienced colleagues across production, quality, sales and marketing.</p></div>
+      <div class="feature-card"><span class="rows__icon">{{icon:globe}}</span><h3>Room to grow</h3><p>As we expand into international markets, new roles and responsibilities open up.</p></div>
+      <div class="feature-card"><span class="rows__icon">{{icon:leaf}}</span><h3>Purpose beyond profit</h3><p>Be part of a company that invests in renewable energy and community initiatives.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" id="positions">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Open positions</h2>
+      <p>Don't see your role? Send us your CV anyway and we will keep it on file for future openings.</p>
+    </div>
+    <div class="jobs reveal">
+      <article class="job">
+        <div><h3>Sales Manager</h3><span class="job__dept">Sales &middot; Full time</span></div>
+        <dl>
+          <div><dt>Experience</dt><dd>2&ndash;3 years in a reputable pharmaceutical company</dd></div>
+          <div><dt>Education</dt><dd>Bachelor's in Science</dd></div>
+          <div><dt>Location</dt><dd>Karachi</dd></div>
+        </dl>
+        <a class="btn btn--outline btn--sm" href="#apply" data-position="Sales Manager">Apply</a>
+      </article>
+      <article class="job">
+        <div><h3>Marketing Manager</h3><span class="job__dept">Marketing &middot; Full time</span></div>
+        <dl>
+          <div><dt>Experience</dt><dd>2&ndash;3 years in a reputable pharmaceutical company</dd></div>
+          <div><dt>Education</dt><dd>Bachelor's in Science</dd></div>
+          <div><dt>Location</dt><dd>Karachi</dd></div>
+        </dl>
+        <a class="btn btn--outline btn--sm" href="#apply" data-position="Marketing Manager">Apply</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apply">
+  <div class="container contact-layout">
+    <div class="reveal">
+      <h2>Apply now</h2>
+      <p class="lead mt-s">Complete the form and attach your CV. Our HR team reviews every application and will contact shortlisted candidates.</p>
+    </div>
+    <div class="form-card reveal">
+      <form data-form data-endpoint="" data-mailto="info@multicaps.net" data-subject="Job application via website" data-success="Thank you for applying. Our HR team will be in touch if your profile is shortlisted." novalidate>
+        <div class="form-grid">
+          <div class="field"><label for="c-first">First name <span class="req">*</span></label><input id="c-first" name="First name" autocomplete="given-name" required><p class="field__error"></p></div>
+          <div class="field"><label for="c-last">Last name <span class="req">*</span></label><input id="c-last" name="Last name" autocomplete="family-name" required><p class="field__error"></p></div>
+          <div class="field"><label for="c-email">Email address <span class="req">*</span></label><input id="c-email" name="Email" type="email" autocomplete="email" required><p class="field__error"></p></div>
+          <div class="field"><label for="c-phone">Phone number <span class="req">*</span></label><input id="c-phone" name="Phone" type="tel" autocomplete="tel" required><p class="field__error"></p></div>
+          <div class="field full"><label for="c-position">Position <span class="req">*</span></label>
+            <select id="c-position" name="Position" required><option value="">Select a position</option><option>Sales Manager</option><option>Marketing Manager</option><option>General application</option></select><p class="field__error"></p></div>
+          <div class="field full"><label for="c-cv">CV / résumé <span class="opt">(PDF or Word, max 5 MB)</span></label><input id="c-cv" name="CV" type="file" accept=".pdf,.doc,.docx"><p class="field__hint">If you are applying by email, please attach your CV to the message.</p></div>
+          <div class="field full"><label for="c-msg">Message <span class="opt">(optional)</span></label><textarea id="c-msg" name="Message"></textarea></div>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+        </div>
+        <div class="form-foot">
+          <p>We use your details only to assess your application.</p>
+          <button class="btn btn--primary" type="submit">Submit Application {{icon:arrow}}</button>
+        </div>
+        <div class="form-status" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll("[data-position]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      var sel = document.getElementById("c-position");
+      if (sel) sel.value = a.getAttribute("data-position");
+    });
+  });
+</script>
